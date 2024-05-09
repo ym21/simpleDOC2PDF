@@ -31,7 +31,7 @@ def save_path(filepath, dirpath):
     """
     変換したPDFを保存するパス
     """
-    return dirpath / filepath.with_suffix('.pdf').name
+    return dirpath / (filepath.name + ".pdf")
 
 
 def doc2pdf(files, dir_name):
